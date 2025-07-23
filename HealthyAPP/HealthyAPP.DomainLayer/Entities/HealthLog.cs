@@ -18,7 +18,7 @@ namespace HealthyAPP.DomainLayer.Entities
 
         public decimal? Weight { get; set; }
 
-        public string Blood_Pressure { get; set; }
+        public string? Blood_Pressure { get; set; }
 
         public decimal? Glucose {  get; set; }
 
