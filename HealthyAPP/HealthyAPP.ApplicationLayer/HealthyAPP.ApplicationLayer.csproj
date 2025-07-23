@@ -9,7 +9,10 @@
   <ItemGroup>
     <Folder Include="Contract\" />
     <Folder Include="DTOs\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HealthyAPP.InfrastructureLayer\HealthyAPP.InfrastructureLayer.csproj" />
   </ItemGroup>
 
 </Project>
