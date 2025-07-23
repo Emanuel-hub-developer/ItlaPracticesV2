@@ -36,7 +36,7 @@ namespace HealthyAPP.InfrastructureLayer.Repositories
             await _context.Database.BeginTransactionAsync();
         }
 
-        public async Task RollBackTransactionASync()
+        public async Task RollBackTransactionAsync()
         {
             await _context.Database.RollbackTransactionAsync();
         }
@@ -46,7 +46,7 @@ namespace HealthyAPP.InfrastructureLayer.Repositories
             await _context.Database.CommitTransactionAsync();
         }
 
-        public async Task CompleteASync()
+        public async Task CompleteAsync()
         {
             await _context.SaveChangesAsync();
         }

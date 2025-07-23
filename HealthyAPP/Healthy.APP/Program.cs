@@ -1,3 +1,5 @@
+using HealthyAPP.ApplicationLayer.Contract;
+using HealthyAPP.ApplicationLayer.Services;
 using HealthyAPP.InfrastructureLayer.Context;
 using HealthyAPP.InfrastructureLayer.Interfaces;
 using HealthyAPP.InfrastructureLayer.Repositories;
@@ -15,6 +17,10 @@ builder.Services.AddDbContext<HealthyAPPContext>(options =>
 
 
 builder.Services.AddTransient<IUnitOfWork,UnitOfWork>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IRoutineService, RoutineService>();
+builder.Services.AddTransient<IMealPlanService, MealPlanService>();
+builder.Services.AddTransient<IHealthLogService, HealthLogService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

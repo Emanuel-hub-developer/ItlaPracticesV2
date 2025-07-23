@@ -12,7 +12,7 @@ namespace HealthyAPP.InfrastructureLayer.Interfaces
 
         Task BeginTransactionAsync();
         Task CommitTransactionAsync();
-        Task CompleteASync();
-        Task RollBackTransactionASync();
+        Task CompleteAsync();
+        Task RollBackTransactionAsync();
     }
 }
